@@ -25,28 +25,93 @@ export default function Home() {
         </Box>
         <Divider />
         <List>
-          <ListItem button component={Link} href="/docs">
-            <ListItemText primary="Getting Started" />
-          </ListItem>
-          <ListItem button component={Link} href="/docs/creating-with-synx">
-            <ListItemText primary="Create with Synx" />
-          </ListItem>
-          <ListItem button component={Link} href="/docs/synx-partners">
-            <ListItemText primary="Synx Brand Partners" />
-          </ListItem>
-          <ListItem button component={Link} href="/docs/faqs">
-            <ListItemText primary="FAQs" />
-          </ListItem>
-          <ListItem button component={Link} href="/docs/contacts">
-            <ListItemText primary="Contact us" />
-          </ListItem>
-        </List>
-        <Divider />
+  <ListItem
+    button
+    component={Link}
+    href="/docs"
+    sx={{
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',              
+      },
+    }}
+  >
+    <ListItemText primary="Getting Started" />
+  </ListItem>
+  <ListItem
+    button
+    component={Link}
+    href="/docs/creating-with-synx"
+    sx={{
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',              
+      },
+    }}
+  >
+    <ListItemText primary="Create with Synx" />
+  </ListItem>
+  <ListItem
+    button
+    component={Link}
+    href="/docs/synx-partners"
+    sx={{
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',              
+      },
+    }}
+  >
+    <ListItemText primary="Synx Brand Partners" />
+  </ListItem>
+  <ListItem
+    button
+    component={Link}
+    href="/docs/faqs"
+    sx={{
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',              
+      },
+    }}
+  >
+    <ListItemText primary="FAQs" />
+  </ListItem>
+  <ListItem
+    button
+    component={Link}
+    href="/docs/contacts"
+    sx={{
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',              
+      },
+    }}
+  >
+    <ListItemText primary="Contact us" />
+  </ListItem>
+</List>
+<Divider />
+
         <Box sx={{ padding: 2, marginTop: 'auto' }}>
-          <Button component={Link} href="/Dashboard/Homepage" fullWidth variant="outlined">
-            ← Back to Home
-          </Button>
-        </Box>
+  <Button
+    component={Link}
+    href="/Dashboard/Homepage"
+    fullWidth
+    variant="outlined"
+    sx={{
+      borderColor: '#6A00D1',  
+      color: '#6A00D1',        
+      '&:hover': {
+        backgroundColor: '#6A00D1',  
+        color: 'white',             
+      },
+    }}
+  >
+    ← Back to Home
+  </Button>
+</Box>
+
       </Drawer>
 
       {/* Main content */}
@@ -65,13 +130,13 @@ export default function Home() {
           <Typography variant="body1" paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Typography>
-          <Typography variant="h2" gutterBottom>
+          <Typography variant="h4" gutterBottom>
             What is Synx?
           </Typography>
           <Typography variant="body1" paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Typography>
-          <Typography variant="h2" gutterBottom>
+          <Typography variant="h4" gutterBottom>
             Synx Features
           </Typography>
           <List>
