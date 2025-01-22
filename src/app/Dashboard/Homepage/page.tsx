@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import bg1 from "./yacht2.jpg";
 import bg2 from "./yacht4.jpg";
 import bg3 from "./yacht5.jpg";
+import Link from 'next/link';
 
 const Page = () => {
   const slideshowImages = [Bg, bg1, bg2, bg3]; 
@@ -19,7 +20,7 @@ const Page = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % slideshowImages.length);
-    }, 10000);
+    }, 7000);
 
     return () => clearInterval(interval); 
   }, [slideshowImages.length]);
@@ -75,15 +76,15 @@ const Page = () => {
         </div>
 
         <div className="flex space-x-6" style={{ color: "#6A00D1" }}>
-          <a href="#home" className="text-xl font-bold hover:text-[#440086]">
-            Home
-          </a>
-          <a href="#events" className="text-xl font-bold hover:text-[#440086]">
-            Why Synx?
-          </a>
-          <a href="#about" className="text-xl font-bold hover:text-[#440086]">
-            About us
-          </a>
+          <Link href="/Dashboard/Homepage">
+            <p className="text-xl font-bold hover:text-[#440086]">Home</p>
+          </Link>
+          <Link href="/Dashboard/Docu">
+            <p className="text-xl font-bold hover:text-[#440086]">Why Synx?</p>
+          </Link>
+          <Link href="/Dashboard/AboutUs">
+            <p className="text-xl font-bold hover:text-[#440086]">About us</p>
+          </Link>
         </div>
       </nav>
 
